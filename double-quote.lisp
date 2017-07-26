@@ -54,8 +54,4 @@
 
 (named-readtables:defreadtable |#"|
     (:merge :common-lisp)
-  (:dispatch-macro-char #\# #\" '|#"-reader|)
-  (:dispatch-macro-char #\# #\Z #'series::series-reader)
-  (:dispatch-macro-char #\# #\M #'series::abbreviated-map-fn-reader))
-
-
+  (:dispatch-macro-char #\# #\" '|#"-reader|))
